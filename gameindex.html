@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <link rel="stylesheet" 
+          href="style.css">
+    <title>2D Brick Breaker Game</title>
+</head>
+
+<body>
+    <div id="startScreen">
+        <h2>2D Brick Breaker Game!</h2>
+        <label for="playerName">
+            Enter your name to play
+        </label>
+        <input type="text" 
+               id="playerName" 
+               placeholder="Your Name">
+        <button id="startButton">
+            Start Game
+        </button>
+	<h5 id="gameCredits"><a href="credits.html">Credits</a></h5>
+	<h5 style="margin-top: 0px;" id="gameInstructions"><a href="instructions.html">How to play</a></h5>
+    </div>
+
+    <div id="gameScreen" 
+         style="display: none;">
+        <canvas id="canvas"></canvas>
+        <canvas id="canvas1"></canvas>
+        <div style="display:inline">
+            <h2 style="text-align:center" 
+                id="curr_score">
+                YOUR SCORE:
+            </h2>
+            <h2 style="text-align:center" 
+                id="high_score">
+                HIGH SCORE:
+            </h2>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
